@@ -5,22 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Lacklee Broadcast</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #2C3E50, #34495E);
+            color: #ecf0f1;
+            overflow: hidden;
         }
         #startMessage {
-            padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 10px;
+            padding: 30px 50px;
+            background: linear-gradient(135deg, #3498db, #8e44ad);
+            color: #ecf0f1;
+            border-radius: 15px;
+            font-size: 32px;
+            font-weight: bold;
             cursor: pointer;
-            font-size: 24px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #startMessage:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
         iframe {
             width: 100%;
